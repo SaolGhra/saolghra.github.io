@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./script/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <link rel="icon" href="./img/icon.jpg"" sizes="32x32" />
+        <link rel="icon" href="./img/icon.jpg" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="./img/icon.jpg" />
+        <meta name="msapplication-TileImage" content="./img/icon.jpg" />
+
+        <style>
+            img {
+              border-radius: 50%;
+            }
+            </style>
+
+        <title>Resume | Spencer </title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Spencer</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Spencer</span><br>~Student~</h1>
+
+                    <a href="./img/SpencerBullockCV.pdf" class="button">CV</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://Linkedin.com/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://instagram.com/Saolyah" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://youtube.com/channel/UCB08sMsshzAPcY7aVr3ww3g" class="home__social-icon"><i class='bx bxl-youtube' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="./img/profile.jpg" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="./img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I am Spencer</h2>
+                        <p class="about__text">I come from England, i am a very ambitious man. I strive for the best out of life to achieve all of my goals.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Due to still being a student, i am still honing onto my skills but i hope for them to improve.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='fab fa-circle skills__icon'></i>
+                                <span class="skills__name">Social</span>
+                            </div>
+                            <div class="skills__bar skills__docker">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='fab fa-circle skills__icon'></i>
+                                <span class="skills__name">Investment</span>
+                            </div>
+                            <div class="skills__bar skills__linux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='fab fa-circle skills__icon' ></i>
+                                <span class="skills__name">Business</span>
+                            </div>
+                            <div class="skills__bar skills__py">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='fab fa-circle skills__icon'></i>
+                                <span class="skills__name">Time Managment</span>
+                            </div>
+                            <div class="skills__bar skills__harden">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="./img/skills.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+<!--            CONTACT 
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+-->
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Social Media</p>
+            <div class="footer__social">
+                <a href="https://Linkedin.com/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://instagram.com/Saolyah" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://youtube.com/channel/UCB08sMsshzAPcY7aVr3ww3g" class="footer__icon"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <p>&#169; 2022 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./script/js/main.js    "></script>
+
+        <!---==== PARTICLES JS=====-->
+        <div id="particles-js"></div>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'particles.json',
+            function(){
+                console.log('particles.json loaded...')
+            })
+        </script>   
+        <script type="text/javascript" src="./script/js/app.js"></script>
+        <script type="text/javascript" src="./script/js/particles.js"></script>
+    
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Decode this : RkxBR3tsa3NqYWt0aW0yMDIyfQ==>
