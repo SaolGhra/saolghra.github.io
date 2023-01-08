@@ -1,0 +1,21 @@
+.whole {
+    background-color: darkslategray;
+    text-align:center;
+    text-decoration: none;
+}
+
+.coming-soon {
+    background-color: rgb(61, 161, 161);
+    vertical-align: top;
+    margin-top: 10;
+    margin-bottom: 10;
+    margin-left: 5;
+    margin-right: 5;
+    font-size: 30px;
+    width: 500px;
+}
+
+.coming-soon:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
