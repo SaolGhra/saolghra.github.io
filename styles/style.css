@@ -108,30 +108,43 @@ h3 {
     width: 500px;
 }
 
-.about {
+.container {
     position: relative;
-    float: left;
+    width: 70%;
+    /* Adjust as needed */
+    height: 70vh;
+    /* Adjust as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    width: 45%;
+    /* Adjust as needed */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    /* Adding padding for better spacing */
 }
 
 .project {
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(50%, -50%);
+    width: 16%;
+    /* Adjust as needed */
     text-align: center;
-    float: right;
+    margin: 0;
+    padding: 20px;
+    /* Adding padding for better spacing */
 }
 
-.projects ol {
+.projects {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: left;
 }
 
-.projects ol li {
+.projects li {
     margin-bottom: 10px;
 }
 
