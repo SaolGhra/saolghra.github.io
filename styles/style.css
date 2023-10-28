@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #162938;
+}
+
+.logo {
+    font-size: 0;
+    user-select: none;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/icon.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.navigation a {
+    position: relative;
+    float: right;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    color: #cfcfcf;
+    transform: scaleX(1)
+}
+
+.navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover {
+    background: #fff;
+    color: #162938;
+
+}
+
+
+h1 {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+
+h3 {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 250;
+    margin-left: 35px;
+    margin-right: 100px;
+    width: 500px;
+}
+
+.about {
+    position: relative;
+    float: left;
+}
+
+.project {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    float: right;
+}
+
+.projects ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.projects ol li {
+    margin-bottom: 10px;
+}
+
+.projects a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+.projects a:hover {
+    color: #cfcfcf;
+    text-shadow: 0 0 3px #cfcfcf;
+    transform: scaleX(1);
+}
