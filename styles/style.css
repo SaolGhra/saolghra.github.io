@@ -9,6 +9,21 @@ body {
     border: 50px solid #162938d8;
 }
 
+.email {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+}
+
+.email:hover {
+    transition: 0.3s;
+    color: #555658;
+    text-decoration: underline;
+}
+
 .logo {
     font-size: 0;
     user-select: none;
