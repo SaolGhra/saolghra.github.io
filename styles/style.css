@@ -1,28 +1,12 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: "poppins", "sans-serif";
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background-color: #162938;
+    border: 50px solid #162938d8;
 }
 
 .logo {
@@ -38,125 +22,91 @@ body {
     background-position: center;
 }
 
-.navigation a {
-    position: relative;
-    float: right;
-    font-size: 1.1em;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-    margin-right: 40px;
-}
 
-.navigation a::after {
-    content: '';
+#toggle-btn,
+.menu a {
     position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform .5s;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
 }
 
-.navigation a:hover::after {
-    color: #cfcfcf;
-    transform: scaleX(1)
-}
-
-.navigation .btnlogin-popup {
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    margin-left: 40px;
-    transition: .5s;
-}
-
-.navigation .btnlogin-popup:hover {
-    background: #fff;
-    color: #162938;
-
-}
-
-
-h1 {
-    padding: 5px;
+.menu a {
+    background-color: #ffffff;
+    height: 70px;
+    width: 70px;
+    font-size: 22px;
+    color: #4249ed;
     text-decoration: none;
-    color: white;
-    font-weight: 500;
-    margin-left: 35px;
+    top: 30px;
+    right: 30px;
+    transition: 0.5s;
 }
 
+.menu a:hover {
+    transition: 0.3s;
+    background: #8c8d91;
+}
 
-h3 {
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    font-weight: 250;
-    margin-left: 35px;
-    margin-right: 100px;
-    width: 500px;
+#toggle-btn {
+    background-color: #0f1730;
+    color: #ffffff;
+    height: 100px;
+    width: 100px;
+    border: none;
+    font-size: 40px;
+    top: 15px;
+    right: 15px;
+    transition: 0.3s;
+}
+
+#toggle-btn:hover {
+    background: #132047;
+}
+
+.active {
+    transform: rotate(-35deg);
+}
+
+.spacer {
+    height: 225px;
 }
 
 .container {
-    position: relative;
-    width: 70%;
-    /* Adjust as needed */
-    height: 70vh;
-    /* Adjust as needed */
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.about {
-    width: 45%;
-    /* Adjust as needed */
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    /* Adding padding for better spacing */
-}
-
-.project {
-    width: 30%;
-    /* Adjust as needed */
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    /* Adding padding for better spacing */
-}
-
+.about,
 .projects {
+    flex: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.projects ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    text-align: left;
 }
 
-.projects li {
-    margin-bottom: 10px;
+.projects ul li {
+    margin: 10px 0;
+    /* Adjust as needed */
 }
 
-.projects a {
-    display: block;
+.projects ul li a {
     text-decoration: none;
     color: white;
-    padding: 10px 0;
 }
 
-.projects a:hover {
-    color: #cfcfcf;
-    text-shadow: 0 0 3px #cfcfcf;
-    transform: scaleX(1);
+.projects ul li a:hover {
+    transition: 0.3s;
+    color: #8c8d91;
+}
+
+h1,
+h2 {
+    margin: 10px 0;
+    color: white;
 }
