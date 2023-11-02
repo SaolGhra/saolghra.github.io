@@ -21,3 +21,24 @@ toggleBtn.addEventListener("click", () => {
 
 
 console.log(toggleBtn, menuItems);
+
+function tiltWithMouse(event) {
+    const project = event.currentTarget;
+    const rect = project.getBoundingClientRect();
+
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateY = (x - centerX) / 14; // Adjust the divisor for sensitivity
+    const rotateX = (centerY - y) / 14;
+
+    project.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+}
+
+function resetTilt(event) {
+    const project = event.currentTarget;
+    project.style.transform = 'none';
+}

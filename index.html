@@ -2,61 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>SaolGhra - Portfolio - Spencer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta theme="#32a0ac">
-    <title>SaolGhra - Spencer Bullock - Portfolio</title>
-    <script src="https://kit.fontawesome.com/93aee5816d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="Spencer Bullock's Portfolio - A student and aspiring full-stack software engineer with expertise in HTML, CSS, Python, Java, JavaScript, C#, C++, Kotlin, app, and web development.">
+    <meta name="keywords" content="Spencer Bullock, Portfolio, Web Development, Full-Stack, Software Engineer, HTML, CSS, Python, Java, JavaScript, C#, C++, Kotlin, App Development, Web Development">
+    <meta name="author" content="Spencer Bullock">
+    <meta name="theme-color" content="#32a0ac">
     <link rel="icon" href="/assets/icon.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/93aee5816d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <a href="assets/icon.png" class="logo"></a>
-        <div class="menu">
-            <a target="_blank" href="https://www.github.com/saolghra/">
-                <i class="fa fa-github"></i>
-            </a>
-            <a target="_blank" href="#projects">
-                <i class="fa fa-code"></i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/spencer-b-b1b1b824b/">
-                <i class="fa fa-linkedin"></i>
-            </a>
-            <a target="_blank" href="contact.html">
-                <i class="fas fa-phone"></i>
-            </a>
-            <button id="toggle-btn">
-                <i class="fas fa-plus"></i>
-            </button>
-
-            <script src="scripts/script.js"></script>
-        </div>
-    </nav>
-    <div class="spacer"></div>
-
-    <section class="container">
-        <div class="about">
-            <!-- About section content goes here -->
-            <h2>Welcome.</h2>
-            <h3>A dedicated student and burgeoning software engineer with a year's experience in web development and Python programming. Passionate about the ever-evolving world of coding, I’m committed to learning, exploring, and leveraging technology to craft innovative solutions. Eager to contribute and make a difference, I'm enthusiastic about the creative possibilities that coding offers and look forward to shaping a tech-driven future.
-            </h3>
-        </div>
-        <div class="spacer"></div>
-        <div class="projects">
-            <!-- Projects section content goes here -->
+    <header>
+        <h1>Spencer Bullock</h1>
+        <nav>
+            <div class="menu">
+                <a href="https://github.com/saolghra/" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="#projects">
+                    <i class="fa fa-code"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/spencer-b-b1b1b824b/" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="mailto:spencer.bullock.business@gmail.com">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <button id="toggle-btn">
+                    <i class="fas fa-plus"></i>
+                </button>
+    
+                <script src="scripts/script.js"></script>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <section id="about-me">
+                <h2>About Me</h2>
+                <p>
+                    I'm a passionate student diving into the world of coding and software development. For the past year, I've been dedicated to mastering the fundamentals of HTML, CSS, and Python. I'm continually learning and refining my skills in these languages while also delving into Java, JavaScript, C#, C++, Kotlin, and various aspects of app and web development.
+                </p>
+                <p>
+                    My goal is to become a versatile full-stack software engineer and web developer. I'm enthusiastic about the endless possibilities that programming offers and am committed to expanding my knowledge and expertise in both front-end and back-end development.
+                </p>
+            </section>
+            <h3>Skills</h3>
+            <div class="skills">
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <!-- Other skills -->
+            </div>
+        </section>
+        <div class="projects-title">
             <h2>Projects</h2>
-            <ul>
-                <li><a target="_blank" href="https://www.github.com/saolghra/saolghra.github.io">Personal Portfolio - Web Development</a></li>
-                <li><a target="_blank" href="https://github.com/SaolGhra/Navigation-Menu">Navigation Menu - Web Development</a></li>
-                <li><a target="_blank" href="https://www.github.com/saolghra/matrix-rain">Matrix Rain - Python</a></li>
-                <!-- Add more project links as list items -->
-            </ul>
         </div>
-    </section>
-
-    <div class="spacer"></div>
+        <section id="projects">
+            <a href="https://github.com/saolghra/saolghra.github.io" target="_blank" class="project" onmousemove="tiltWithMouse(event)" onmouseleave="resetTilt(event)">
+                <img src="assets/personalportfolio.png" alt="Personal Portfolio Image">
+                <h3>Personal Portfolio - Web Development</h3>
+                <p>My constantly updated Personal portfolio that links to all the projects I have created and any future projects.</p>
+            </a>
+            <a href="https://github.com/SaolGhra/Navigation-Menu" target="_blank" class="project" onmousemove="tiltWithMouse(event)" onmouseleave="resetTilt(event)">
+                <img src="assets/navigationmenu.png" alt="Navigation Menu Image">
+                <h3>Navigation Menu - Web Development</h3>
+                <p>A small project of a navigation menu Primarily made to be used in my personal portfolio.</p>
+            </a>
+            <a href="https://github.com/saolghra/matrix-rain" target="_blank" class="project" onmousemove="tiltWithMouse(event)" onmouseleave="resetTilt(event)">
+                <img src="assets/matrixrain.png" alt="Matrix Rain Image">
+                <h3>Matrix Rain - Python</h3>
+                <p>inspired by the movie The Matrix, i have created the "Matrix Rain" as seen in the movie using Python and pygame.</p>
+            </a>
+            <a href="https://github.com/saolghra/Mobius-Strip" target="_blank" class="project" onmousemove="tiltWithMouse(event)" onmouseleave="resetTilt(event)">
+                <img src="assets/mobiusstrip.png" alt="Mobius Strip Image">
+                <h3>Mobius Strip - Python</h3>
+                <p>The Mobius Strip, a shape that has one side and can be followed infinitely, i decided to make a program to show this.</p>
+            </a>
+        </section>
+        <div class="futures-title">
+            <h2>Future Projects</h2>
+        </div>
+        <section id="future-projects">
+            <div class="future-projects-container">
+                <div class="future-project">
+                    <h3>An Everyday utility app for android</h3>
+                    <p>This app will be filled with a bunch of useful features, practically just an all in one application for utility.</p>
+                    <p>Planned to be started in Q4 2023 - Q2 2024</p>
+                </div>
+                <div class="future-project">
+                    <h3>2D Platformer game made using Unity</h3>
+                    <p>As a part of expanding my portfolio i want to make a small platformer game with 10+ levels to help me begin my games design.</p>
+                    <p>Planned to be started in Q1 2024 - Q2 2024</p>
+                </div>
+                <div class="future-project">
+                    <h3>Image Recognition application</h3>
+                    <p>To broaden my knowledge and understanding of code i'd like to start going into machine learning and artificial intelligence and to do this i'd like to begin with creating an image Recognition app for the computer.</p>
+                    <p>Planned to be started in Q2 2024 - Q3 2024</p>
+                </div>
+                <div class="future-project">
+                    <h3>E-Commerse Platform</h3>
+                    <p>Such as the sites platforms like Shopify allow you to make, i'd like to make my own and in my own way, this could possibly be a stepping stone in helping me towards full stack web development as a job too.</p>
+                    <p>Planned to be started in Q2 2024 - Q3 2024</p>
+                </div>
+                <div class="future-project">
+                    <h3>Data Visualisation Dashboard</h3>
+                    <p>To continue with my passion for web development i'd like to make an analytics / data dashboard which not only could i use but i'd make it open source on github for others to have access to and use on their own projects too.</p>
+                    <p>Planned to be started in Q3 2024 - Q4 2024</p>
+                </div>
+                <div class="future-project">
+                    <h3>3D Platformer game using Unreal Engine</h3>
+                    <p>Sticking to my full software engineering outcome, i will begin to move to unreal engine as this is where most games are made today, and i will start by making a 20+ level platformer game.</p>
+                    <p>Planned to be started in Q4 2024 - Q1 2025</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 SaolGhra.co.uk - Spencer Bullock Portfolio</p>
+    </footer>
 </body>
-<footer>
-
-</footer>
 </html>
