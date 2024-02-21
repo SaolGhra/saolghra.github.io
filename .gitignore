@@ -1,3 +1,4 @@
-.htaccess
-cname
-assets/
+# .gitignore
+
+# Ignores folders
+.vscode/
