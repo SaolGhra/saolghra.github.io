@@ -231,7 +231,7 @@ canvas {
   display: flex;
   align-items: center;
   cursor: pointer;
-  min-width: 11vw;
+  min-width: 8vw;
 }
 
 .skill img {
