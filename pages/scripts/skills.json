@@ -11,7 +11,8 @@
     { "name": "Golang", "icon": "../../assets/devicons/golang.svg" },
     { "name": "MySQL", "icon": "../../assets/devicons/mysql.svg" },
     { "name": "PHP", "icon": "../../assets/devicons/php.svg" },
-    { "name": "JSON", "icon": "../../assets/devicons/json.svg" }
+    { "name": "JSON", "icon": "../../assets/devicons/json.svg" },
+    { "name": "Lua", "icon": "../../assets/devicons/lua.svg" }
   ],
   "frameworks": [
     { "name": "React", "icon": "../../assets/devicons/react.svg" },
