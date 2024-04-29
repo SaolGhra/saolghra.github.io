@@ -1,37 +1,44 @@
-// Sample project data
-const projects = [
-  {
-    name: "Project 1",
-    description: "Description of Project 1",
-    skills: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    name: "Project 2",
-    description: "Description of Project 2",
-    skills: ["Python", "Django", "SQL"],
-  },
-  {
-    name: "Project 3",
-    description: "Description of Project 3",
-    skills: ["React", "Node.js", "MongoDB"],
-  },
-];
+// Function to fetch project data from JSON file
+async function fetchProjects() {
+  try {
+    const response = await fetch("./scripts/projects.json");
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching project data:", error);
+    return [];
+  }
+}
 
 // Function to generate project cards
-function generateProjectCards() {
+async function generateProjectCards() {
   const projectList = document.getElementById("project-list");
   const grid = document.createElement("div");
   grid.classList.add("grid");
 
+  const projects = await fetchProjects();
   projects.forEach((project) => {
-    const card = document.createElement("a"); // Change div to anchor tag
+    const card = document.createElement("div");
     card.classList.add("project-card");
-    card.href = project.link; // Set href to project link
-    card.innerHTML = `
-            <h3>${project.name}</h3>
-            <p>${project.description}</p>
-            <p>Skills: ${project.skills.join(", ")}</p>
-        `;
+
+    if (project.link) {
+      const link = document.createElement("a");
+      link.href = project.link;
+      link.target = "_blank";
+      link.innerHTML = `
+              <h3>${project.name}</h3>
+              <p>${project.description}</p>
+              <p>Skills: ${project.skills.join(", ")}</p>
+          `;
+      card.appendChild(link);
+    } else {
+      card.innerHTML = `
+              <h3>${project.name}</h3>
+              <p>${project.description}</p>
+              <p>Skills: ${project.skills.join(", ")}</p>
+          `;
+    }
+
     grid.appendChild(card);
   });
 
@@ -63,5 +70,4 @@ function searchProjects() {
   });
 }
 
-// Optional: Add event listener for search input
 document.getElementById("search").addEventListener("input", searchProjects);

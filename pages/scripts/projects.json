@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Atmosify",
+    "description": "A weather app that includes games and other utility functions.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "link": "https://atmosify.tech/"
+  },
+  {
+    "name": "IPWho",
+    "description": "IPWho is a simple IP lookup tool.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "link": "https://saolghra.co.uk/ipwho/"
+  },
+  {
+    "name": "Listify",
+    "description": "Listify is a to-do list app that helps you organize your tasks.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "link": "https://saolghra.co.uk/listify/"
+  },
+  {
+    "name": "Network Analysis Simulation",
+    "description": "This displays a simulation of a newtworks nodes using R.",
+    "skills": ["R"],
+    "link": "https://github.com/SaolGhra/NetworkAnalysis"
+  },
+  {
+    "name": "Snake",
+    "description": "A simple snake game built using HTML, CSS, and JavaScript.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "link": "https://saolghra.co.uk/snake/"
+  },
+  {
+    "name": "Game Information Scraper - Still in development",
+    "description": "A web scraper that scrapes specific game information from multiple websites, perfectly validated to ensure the information is correct and up-to-date.",
+    "skills": ["JavaScript"]
+  },
+  {
+    "name": "Voxify",
+    "description": "A multi use utility discord bot that can play music, moderate servers, and more.",
+    "skills": ["JavaScript"]
+  },
+  {
+    "name": "Chronomagica",
+    "description": "Minecraft mod that adds time manipulation mechanics. - Still in development.",
+    "skills": ["Java", "Gradle", "Minecraft Forge"],
+    "link": "https://github.com/SaolGhra/Chronomagica"
+  },
+  {
+    "name": "Nexarda Bot",
+    "description": "A discord bot that provides game information and statistics for the Nexarda Discord server. - Still in development.",
+    "skills": ["JavaScript"]
+  },
+  {
+    "name": "Navigation Menu",
+    "description": "A responsive navigation menu using HTML, CSS, and JavaScript.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "link": "https://github.com/SaolGhra/Navigation-Menu"
+  },
+  {
+    "name": "Matrix Rain",
+    "description": "Matrix rain animation.",
+    "skills": ["Python"],
+    "link": "https://github.com/SaolGhra/Navigation-Menu"
+  },
+  {
+    "name": "SaolGhra.co.uk V1",
+    "description": "My first personal portfolio for all my projects, work and skills.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "link": "https://saolghra.co.uk/v1/"
+  },
+  {
+    "name": "SaolGhra.co.uk Current - Still in development",
+    "description": "My Personal Portfolio for all my projects, work and skills. - Still in development.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "link": "https://saolghra.co.uk/"
+  },
+  {
+    "name": "Go Web Scraper",
+    "description": "A web scraper built using Go, Based off my Game Information Scraper.",
+    "skills": ["Golang"],
+    "link": "https://github.com/SaolGhra/go-web-scraper"
+  },
+  {
+    "name": "Python Task Manager",
+    "description": "A simple task manager built using Python.",
+    "skills": ["Python"],
+    "link": "https://github.com/SaolGhra/python-task-manager"
+  },
+  {
+    "name": "Airliners Information Scraper",
+    "description": "A web scraper that scrapes specific airliner information from multiple websites, perfectly validated to ensure the information is correct and up-to-date.",
+    "skills": ["JavaScript"],
+    "link": "https://github.com/SaolGhra/AirlinersScraper"
+  },
+  {
+    "name": "Mobius Strip",
+    "description": "A mobius strip animation.",
+    "skills": ["Python"],
+    "link": "https://github.com/SaolGhra/Mobius-Strip"
+  }
+]
