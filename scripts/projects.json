@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Atmosify",
+    "description": "Atmosify is a versatile weather app that provides the user with accurate weather information, games and more.",
+    "date": "05/01/2024 - {date.now}"
+  },
+  {
+    "title": "Nexarda Bot",
+    "description": "Nexarda Bot is a Discord bot that provides users with information about games, such as their price, rating, and more. (Made for discord)",
+    "date": "06/02/2024 - {date.now}"
+  },
+  {
+    "title": "Chronomagica",
+    "description": "Chronomagica is a minecraft magic mod that allows for time manipulation, spell casting, and more.",
+    "date": "21/02/2024 - {date.now}"
+  }
+]

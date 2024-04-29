@@ -291,6 +291,60 @@ canvas {
   color: #fff;
 }
 
+/* Current Projects */
+
+#current-projects {
+  margin-top: 20px;
+  /* float: left;  */
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  padding: 20px;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  clear: left;
+  margin-bottom: 8vh;
+}
+
+#current-projects h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.project-timeline {
+  position: relative;
+}
+
+.project-timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.project-timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 2px;
+  height: 100%;
+  background-color: #f8f8f8fa;
+}
+
+.project-timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.project-timeline-item h3 {
+  margin-top: 0;
+}
+
 /* Contact Page */
 
 #contact {
@@ -386,9 +440,20 @@ button[type="submit"]:hover {
 }
 
 #about {
-  float: right;
-  margin-left: 10px;
-  border-left: none;
+  position: absolute;
+  top: 6vh;
+  right: 0;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  padding: 20px;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile Styling */
@@ -416,8 +481,38 @@ button[type="submit"]:hover {
   }
 
   #about {
-    margin-top: 10px;
-    float: left;
+    position: relative;
+    margin: 10px auto;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #current-projects {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 20px auto;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .header {
