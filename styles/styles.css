@@ -407,7 +407,7 @@ button[type="submit"]:hover {
 
 .divider {
   width: 2px;
-  height: calc(100% - 40px);
+  height: calc(100% + 12vh);
   background-color: #ccc;
   position: absolute;
   top: 8vh;
