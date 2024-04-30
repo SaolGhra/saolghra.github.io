@@ -67,7 +67,7 @@ function drawBalls() {
   drawPattern();
 
   // Draw blue ball (using a brighter shade of blue)
-  ctx.fillStyle = "rgba(0, 0, 255, 1)";
+  ctx.fillStyle = "rgba(0, 0, 255, 0.5)";
   ctx.filter = `blur(${blurAmount}px)`;
   ctx.beginPath();
   ctx.arc(
@@ -81,7 +81,7 @@ function drawBalls() {
   ctx.fill();
 
   // Draw red ball
-  ctx.fillStyle = "rgba(255, 0, 0, 0.7)";
+  ctx.fillStyle = "rgba(255, 0, 0, 0.5)";
   ctx.beginPath();
   ctx.arc(
     canvas.width / 4,
