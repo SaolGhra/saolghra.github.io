@@ -157,6 +157,34 @@ canvas {
   z-index: -1;
 }
 
+#canvas-container {
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(500px);
+  transition: all 0.3s ease-in-out;
+}
+
+#red-circle {
+  background-color: red;
+  width: 500px;
+  height: 500px;
+  top: calc(50% + 500px);
+  left: calc(50% + 300px);
+}
+
+#purple-circle {
+  background-color: purple;
+  filter: blur(300px);
+  width: 500px;
+  height: 500px;
+  top: 0;
+  left: 0;
+}
+
 /* Experiences */
 .timeline {
   position: relative;
@@ -458,6 +486,10 @@ button[type="submit"]:hover {
 
 /* Mobile Styling */
 @media only screen and (max-width: 767px) {
+  * {
+    overflow-x: hidden;
+  }
+
   .divider {
     opacity: 0;
   }
@@ -468,7 +500,11 @@ button[type="submit"]:hover {
     box-sizing: border-box;
     padding: 20px;
     margin: 10px 0;
-    background-color: rgba(51, 51, 51, 0.6);
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
     color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -516,7 +552,7 @@ button[type="submit"]:hover {
   }
 
   .header {
-    width: 90%;
+    width: 85%;
     margin: 5px auto;
     top: 5px;
     opacity: 1;
@@ -610,7 +646,7 @@ button[type="submit"]:hover {
   input[type="email"],
   textarea {
     font-size: 14px;
-    width: calc(100% - 20px);
+    width: calc(100% - 30px);
   }
 
   button[type="submit"] {
@@ -629,5 +665,39 @@ button[type="submit"]:hover {
 
   button[type="submit"]:hover {
     background-color: #0056b3;
+  }
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .circle {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(500px);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+
+  #red-circle {
+    background-color: red;
+    width: 50vh;
+    height: 50vh;
+    top: calc(50% + 25vh);
+    left: calc(50% + 15vh);
+  }
+
+  #purple-circle {
+    background-color: purple;
+    filter: blur(300px);
+    width: 50vh;
+    height: 50vh;
+    top: 0;
+    left: 0;
   }
 }
