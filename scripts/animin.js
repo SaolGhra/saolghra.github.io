@@ -12,7 +12,12 @@ if (aboutSection) {
 }
 if (divider) {
   if (window.innerWidth > 768) {
-    gsap.set(divider, { opacity: 0, y: "100vh" });
+    gsap.set(divider, {
+      opacity: 0,
+      y: "100vh",
+      x: "50%",
+      transform: "translateX(-50%)",
+    });
   } else {
     gsap.set(divider, { display: "none" });
   }
@@ -36,7 +41,6 @@ if (aboutSection) {
   });
 }
 
-// Animate .divider if present
 if (divider) {
   if (window.innerWidth > 768) {
     gsap.to(divider, {
