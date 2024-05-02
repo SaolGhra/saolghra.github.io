@@ -61,36 +61,38 @@ if (divider) {
 
 // Additional animations
 const skillsSection = document.getElementById("skills");
-const h2Skills = skillsSection.querySelector("h2");
-const languages = document.querySelector(".languages");
-const frameworks = document.querySelector(".frameworks");
+if (skillsSection) {
+  const h2Skills = skillsSection.querySelector("h2");
+  const languages = document.querySelector(".languages");
+  const frameworks = document.querySelector(".frameworks");
 
-if (h2Skills) {
-  gsap.from(h2Skills, {
-    duration: 2,
-    opacity: 0,
-    y: "-250vh",
-    ease: "power2.out",
-    delay: 0.5,
-  });
-}
+  if (h2Skills) {
+    gsap.from(h2Skills, {
+      duration: 2,
+      opacity: 0,
+      y: "-250vh",
+      ease: "power2.out",
+      delay: 0.5,
+    });
+  }
 
-if (languages) {
-  gsap.from(languages, {
-    duration: 1.5,
-    opacity: 0,
-    x: "-100%",
-    ease: "power2.out",
-    delay: 0.5,
-  });
-}
+  if (languages) {
+    gsap.from(languages, {
+      duration: 1.5,
+      opacity: 0,
+      x: "-100%",
+      ease: "power2.out",
+      delay: 0.5,
+    });
+  }
 
-if (frameworks) {
-  gsap.from(frameworks, {
-    duration: 1.5,
-    opacity: 0,
-    x: "100%",
-    ease: "power2.out",
-    delay: 0.5,
-  });
+  if (frameworks) {
+    gsap.from(frameworks, {
+      duration: 1.5,
+      opacity: 0,
+      x: "100%",
+      ease: "power2.out",
+      delay: 0.5,
+    });
+  }
 }

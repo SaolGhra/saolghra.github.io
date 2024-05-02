@@ -491,6 +491,10 @@ button[type="submit"]:hover {
     overflow-x: hidden;
   }
 
+  body {
+    scroll-padding-top: 50px;
+  }
+
   .divider {
     opacity: 0;
   }
@@ -532,6 +536,7 @@ button[type="submit"]:hover {
     color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8vh;
   }
 
   #current-projects {
@@ -671,9 +676,9 @@ button[type="submit"]:hover {
   canvas {
     position: fixed;
     top: 0;
-    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 100dvh;
     z-index: -1;
   }
 
