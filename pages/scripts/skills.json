@@ -27,6 +27,7 @@
     { "name": "Pandas", "icon": "../../assets/devicons/pandas.svg" },
     { "name": "Tensorflow", "icon": "../../assets/devicons/tensorflow.svg" },
     { "name": "Axios", "icon": "../../assets/devicons/axios.svg" },
-    { "name": "Express", "icon": "../../assets/devicons/express.svg" }
+    { "name": "Express", "icon": "../../assets/devicons/express.svg" },
+    { "name": "GSAP", "icon": "../../assets/devicons/gsap.svg" }
   ]
 }
