@@ -15,6 +15,7 @@ gsap.set(elementsToAnimate, { opacity: 0, x: "-100vw" });
 if (aboutSection) {
   gsap.set(aboutSection, { opacity: 0, x: "100vw" });
 }
+
 if (divider) {
   if (window.innerWidth > 768) {
     gsap.set(divider, {
