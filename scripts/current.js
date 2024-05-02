@@ -42,6 +42,32 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     })
     .catch((error) => console.error("Error loading projects:", error));
+
+  // Fetch and update skills
+  fetch("../pages/scripts/skills.json")
+    .then((response) => response.json())
+    .then((skills) => {
+      const languagesCount = skills.languages.length;
+      const frameworksCount = skills.frameworks.length;
+
+      const aboutSection = document.getElementById("about");
+      const aboutParagraph = aboutSection.querySelector("p");
+
+      aboutParagraph.innerHTML = `
+        Hey, I'm Spencer Bullock, a full-stack software engineer with a
+        passion for turning ideas into functional solutions.<br /><br />
+
+        Proficient in ${languagesCount} languages and ${frameworksCount} frameworks, including HTML, CSS,
+        Python, Java, JavaScript, C#, C++, and Golang, I specialize in web and
+        app development.<br /><br />
+
+        Outside of coding, you'll find me gaming, honing my music skills, and
+        hanging out with friends.<br /><br />
+
+        Excited for the next challenge in software engineering!
+      `;
+    })
+    .catch((error) => console.error("Error loading skills:", error));
 });
 
 function parseDate(dateString, formats) {
