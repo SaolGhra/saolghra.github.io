@@ -1,5 +1,3 @@
-import { gsap } from "../node_modules/gsap/index.js";
-
 // Select all elements except the header
 const elementsToAnimate = document.querySelectorAll(
   "body > *:not(.header) >:not(canvas)"

@@ -4,3 +4,8 @@
 .vscode/
 
 depricated/
+node_modules/
+
+# Ignores files
+package-lock.json
+package.json
