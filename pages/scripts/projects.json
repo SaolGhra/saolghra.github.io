@@ -97,5 +97,11 @@
     "description": "A mobius strip animation.",
     "skills": ["Python"],
     "link": "https://github.com/SaolGhra/Mobius-Strip"
+  },
+  {
+    "name": "Youtube Music Rich Presence",
+    "description": "A discord rich presence for youtube music.",
+    "skills": ["JavaScript", "Node.js", "Discord-rpc", "Google Extension"],
+    "link": "https://github.com/SaolGhra/richpresence"
   }
 ]
