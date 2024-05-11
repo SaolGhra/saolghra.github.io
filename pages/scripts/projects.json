@@ -103,5 +103,18 @@
     "description": "A discord rich presence for youtube music.",
     "skills": ["JavaScript", "Node.js", "Discord-rpc", "Google Extension"],
     "link": "https://github.com/SaolGhra/richpresence"
+  },
+  {
+    "name": "Real-time Facial and Hand Landmark Detection",
+    "description": "A real-time Python application for detecting facial and hand landmarks using OpenCV and Mediapipe.",
+    "skills": [
+      "Python",
+      "OpenCV",
+      "Mediapipe",
+      "Computer Vision",
+      "Machine Learning",
+      "Image Processing"
+    ],
+    "link": "https://github.com/SaolGhra/Python-Facial-Recognition"
   }
 ]
