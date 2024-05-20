@@ -116,5 +116,17 @@
       "Image Processing"
     ],
     "link": "https://github.com/SaolGhra/Python-Facial-Recognition"
+  },
+  {
+    "name": "Discord Meme Fetcher Bot",
+    "description": "A fun and engaging Go-based Discord bot that fetches random memes from Reddit and shares them in your server on command. Use the /meme command to instantly brighten up the chat with a fresh meme.",
+    "skills": [
+      "GoLang",
+      "Discord API",
+      "Web Scraping",
+      "Bot Development",
+      "JSON Parsing"
+    ],
+    "link": "https://github.com/saolghra/discord-bot-go"
   }
 ]
