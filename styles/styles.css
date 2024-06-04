@@ -259,7 +259,11 @@ canvas {
   display: flex;
   align-items: center;
   cursor: pointer;
-  min-width: 8vw;
+  min-width: 160px;
+}
+
+.skill span {
+  max-width: 0.1dvw;
 }
 
 .skill img {
