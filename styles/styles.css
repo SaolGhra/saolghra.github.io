@@ -21,7 +21,7 @@ body {
 /* Header */
 
 .header {
-  position: fixed;
+  position: relative;
   top: 3vh;
   left: 50%;
   transform: translateX(-50%);
@@ -89,6 +89,7 @@ body {
   justify-content: left;
   align-items: center;
   margin-bottom: 10px;
+  justify-content: space-around;
 }
 
 .search-container input[type="text"] {
@@ -114,6 +115,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .project-card {
@@ -133,6 +136,7 @@ body {
 
 .project-card h3 {
   margin-top: 0;
+  text-align: center;
 }
 
 .project-card p {
@@ -325,9 +329,9 @@ canvas {
 
 /* Current Projects */
 
-#current-projects {
+/* #current-projects {
   margin-top: 20px;
-  /* float: left;  */
+  float: left;
   width: calc(50% - 20px);
   box-sizing: border-box;
   padding: 20px;
@@ -341,7 +345,7 @@ canvas {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   clear: left;
   margin-bottom: 8vh;
-}
+} */
 
 #current-projects h2 {
   margin-top: 0;
@@ -439,20 +443,19 @@ button[type="submit"]:hover {
 /* About */
 
 .divider {
-  width: 2px;
-  height: calc(100% + 29vh);
-  background-color: #ccc;
   position: absolute;
-  top: 8vh;
-  bottom: 20px;
+  background-color: white;
+  height: 90%;
+  width: 2px;
+  top: 1%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .main-section {
-  top: 6vh;
   position: relative;
   width: calc(50% - 20px);
+  flex-grow: 1;
   box-sizing: border-box;
   padding: 20px;
   margin: 10px;
@@ -465,6 +468,16 @@ button[type="submit"]:hover {
   float: left;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  min-width: 1080px;
 }
 
 #experience {
@@ -474,7 +487,6 @@ button[type="submit"]:hover {
 
 #about {
   position: absolute;
-  top: 6vh;
   right: 0;
   width: calc(50% - 20px);
   box-sizing: border-box;
@@ -487,6 +499,8 @@ button[type="submit"]:hover {
   color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  grid-column: 1 / 2; /* Start at column 1 and end at column 2 */
+  grid-row: 1; /* Place in the first row */
 }
 
 /* Mobile Styling */
@@ -505,7 +519,6 @@ button[type="submit"]:hover {
 
   .main-section {
     position: relative;
-    width: calc(100% - 20px);
     box-sizing: border-box;
     padding: 20px;
     margin: 10px 0;
@@ -517,53 +530,32 @@ button[type="submit"]:hover {
     color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 7vh;
   }
 
-  #experience {
-    margin-bottom: 10px;
-    float: right;
+  #about,
+  #experience,
+  #current-projects {
+    position: relative;
   }
 
   #about {
-    position: relative;
-    margin: 10px auto;
-    margin-left: 10px;
-    width: calc(100% - 20px);
-    box-sizing: border-box;
-    padding: 20px;
-    background: linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    );
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 8vh;
+    max-width: 95vw;
+    margin: 10px 10px;
+  }
+
+  #experience {
+    max-width: 95vw;
+    margin: 10px 10px;
+    border-right: none;
   }
 
   #current-projects {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin: 20px auto;
-    margin-left: 10px;
-    width: calc(100% - 20px);
-    box-sizing: border-box;
-    padding: 20px;
-    background: linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    );
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 38%; /* Remove any max-width constraints */
+    margin: 10px; /* Adjust margin as needed */
   }
 
   .header {
     width: 85%;
-    margin: 5px auto;
     top: 5px;
     opacity: 1;
   }
@@ -607,6 +599,14 @@ button[type="submit"]:hover {
   .skill {
     padding: 10px;
     font-size: 12px;
+    min-width: 30vw;
+  }
+
+  .skill span {
+    padding: 10px;
+    font-size: 12px;
+    /* min-width: 65px; */
+    min-width: 15dvw;
   }
 
   .skill img {
