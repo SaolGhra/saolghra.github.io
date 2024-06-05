@@ -720,7 +720,7 @@ main {
 }
 
 /* Horizontal Mobile Screens */
-@media only screen and (min-width: 667px) {
+@media only screen and (min-width: 568px) and (max-width: 1024px) and (orientation: landscape) {
   html {
     overflow-x: hidden;
   }
@@ -732,13 +732,18 @@ main {
     margin-bottom: 5px;
   }
 
-  /* .main-section,
+  .divider {
+    position: relative;
+  }
+
+  .main-section,
   #about {
     width: 95vw;
-  } */
+    position: relative;
+  }
 
   main {
-    /* display: flex; */
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
