@@ -732,14 +732,15 @@ main {
     margin-bottom: 5px;
   }
 
-  .main-section,
+  /* .main-section,
   #about {
     width: 95vw;
-  }
+  } */
 
   main {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
   }
 }
