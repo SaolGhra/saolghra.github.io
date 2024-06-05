@@ -728,8 +728,7 @@ main {
   .header {
     width: 85vw;
     opacity: 1;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 3vh;
   }
 
   .divider {
@@ -764,13 +763,12 @@ main {
   .header {
     width: 85vw;
     opacity: 1;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 3vh;
   }
 }
 
-/* Nest Hub Styling */
-@media only screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px) {
+/* Surface Pro 7 */
+@media only screen and (min-width: 1368px) and (max-width: 1368px) and (min-height: 912px) and (max-height: 912px) {
   html {
     overflow-x: hidden;
   }
@@ -778,12 +776,50 @@ main {
   .header {
     width: 85vw;
     opacity: 1;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 3vh;
+  }
+}
+
+/* iPad Pro */
+@media only screen and (min-width: 1366px) and (max-width: 1366px) and (min-height: 1024px) and (max-height: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 85vw;
+    opacity: 1;
+    margin-bottom: 5vh;
+  }
+}
+
+/* Ipad Mini */
+@media only screen and (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 85vw;
+    opacity: 1;
+    margin-bottom: 5vh;
   }
 
   main {
-    max-width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    min-width: 95vw;
     /* padding: 0 10px; */
+  }
+
+  .main-section,
+  #about {
+    width: 95vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
 }
