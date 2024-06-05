@@ -532,6 +532,13 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 1080px;
+  }
+
   #about,
   #experience,
   #current-projects {
@@ -550,8 +557,7 @@ main {
   }
 
   #current-projects {
-    max-width: 38%;
-    min-width: 30%;
+    max-width: 95vw;
     margin: 10px 10px;
   }
 
