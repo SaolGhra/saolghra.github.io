@@ -1,5 +1,11 @@
 [
   {
+    "name": "FloatWeb | Building tomorrow's web. today",
+    "description": "A web development agency that specializes in creating modern, responsive, and user-friendly websites for businesses and individuals.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "link": "https://floatweb.live/"
+  },
+  {
     "name": "Atmosify",
     "description": "A weather app that includes games and other utility functions.",
     "skills": ["HTML", "CSS", "JavaScript"],

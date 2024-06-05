@@ -38,3 +38,21 @@ function generateTimelineItems() {
 
 // Call the function to generate timeline items
 generateTimelineItems();
+
+function setDividerOpacity() {
+  var divider = document.querySelector(".divider");
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    divider.style.opacity = "0";
+  } else if (
+    window.matchMedia("(max-width: 1023px)").matches ||
+    window.matchMedia("(min-width: 568px)").matches
+  ) {
+    divider.style.opacity = "0";
+  } else {
+    divider.style.opacity = "1";
+  }
+}
+
+setDividerOpacity();
+
+window.addEventListener("resize", setDividerOpacity);
