@@ -93,7 +93,7 @@ body {
 }
 
 .search-container input[type="text"] {
-  width: 15%;
+  width: 35%;
   padding: 12px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -101,7 +101,7 @@ body {
   background-color: #333333;
   color: #ffffff;
   font-size: 14px;
-  margin-top: 13vh;
+  margin: 20px 0;
   margin-bottom: 10px;
 }
 
@@ -575,18 +575,37 @@ main {
     font-size: 14px;
   }
 
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+  }
+
   .search-container input[type="text"] {
-    width: 100%;
+    width: 95vw;
     margin-bottom: 10px;
+    margin: 10px 10px;
+    padding: 10px 10px;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
+    width: 95vw; /* Ensure the grid fits within the viewport */
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .project-card {
-    padding: 15px;
+    width: 95vw;
+  }
+
+  .section {
+    padding: 10px 10px;
   }
 
   .timeline {
