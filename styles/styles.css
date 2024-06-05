@@ -740,12 +740,50 @@ main {
   #about {
     width: 95vw;
     position: relative;
+    display: flex;
+    justify-content: center;
   }
 
   main {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    min-width: 95vw;
+    /* padding: 0 10px; */
+  }
+}
+
+/* Nest Hub Max Styling */
+@media only screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 800px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 85vw;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Nest Hub Styling */
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 85vw;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  main {
+    max-width: 95vw;
+    /* padding: 0 10px; */
   }
 }
