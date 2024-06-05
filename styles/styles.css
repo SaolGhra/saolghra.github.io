@@ -550,8 +550,9 @@ main {
   }
 
   #current-projects {
-    max-width: 38%; /* Remove any max-width constraints */
-    margin: 10px; /* Adjust margin as needed */
+    max-width: 38%;
+    min-width: 30%;
+    margin: 10px 10px;
   }
 
   .header {
