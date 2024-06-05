@@ -718,3 +718,28 @@ main {
     left: 0;
   }
 }
+
+/* Horizontal Mobile Screens */
+@media only screen and (min-width: 667px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 85vw;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .main-section,
+  #about {
+    width: 95vw;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
