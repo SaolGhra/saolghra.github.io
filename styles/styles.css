@@ -166,7 +166,9 @@ canvas {
 }
 
 .circle {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
   border-radius: 50%;
   filter: blur(400px);
   transition: all 0.3s ease-in-out;
@@ -176,7 +178,7 @@ canvas {
   background-color: red;
   width: 500px;
   height: 500px;
-  top: calc(50% + 400px);
+  top: calc(50% + 100px);
   left: calc(50% + 300px);
 }
 
@@ -187,6 +189,8 @@ canvas {
   height: 500px;
   top: 0;
   left: 0;
+  top: calc(50% - 400px);
+  left: calc(20% - 400px);
 }
 
 /* Experiences */
