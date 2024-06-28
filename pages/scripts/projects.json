@@ -134,5 +134,23 @@
       "JSON Parsing"
     ],
     "link": "https://github.com/saolghra/discord-bot-go"
+  },
+  {
+    "name": "FightingDudes",
+    "description": "A simple fighting game built using HTML, CSS, and JavaScript.",
+    "skills": ["Html", "CSS", "JavaScript", "GSAP"],
+    "link": "https://saolghra.co.uk/fightingdudes/"
+  },
+  {
+    "name": "Spinning Seal",
+    "description": "A spinning seal animation with cool music.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "link": "https://saolghra.co.uk/spinningseal/"
+  },
+  {
+    "name": "Shibes",
+    "description": "A shibe image fetcher with a counter.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "link": "https://saolghra.co.uk/shibes/"
   }
 ]
