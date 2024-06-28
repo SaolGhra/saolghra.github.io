@@ -363,6 +363,16 @@ canvas {
   border-radius: 5px;
 }
 
+.project-timeline-item a {
+  text-decoration: none;
+  color: #067bf6;
+}
+
+.project-timeline-item a:hover {
+  transition: color 0.3s;
+  color: #0056b3;
+}
+
 .project-timeline-item::before {
   content: "";
   position: absolute;
@@ -464,6 +474,9 @@ button[type="submit"]:hover {
     rgba(255, 255, 255, 0.2) 0%,
     rgba(255, 255, 255, 0.1) 100%
   );
+  /* webkit backdrop blur */
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   color: #fff;
   float: left;
   border-radius: 10px;
