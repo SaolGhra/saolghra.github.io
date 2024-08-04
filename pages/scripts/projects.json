@@ -1,5 +1,17 @@
 [
   {
+    "name": "Hot Experience",
+    "description": "A Fabric Minecraft mod for 1.21 that swaps bottles of experience and totems of undying using a keybind, useful for PvP situations.",
+    "skills": ["Java", "Gradle", "FabricMC", "Fabric API"],
+    "link": "https://github.com/SaolGhra/Hot-Experience"
+  },
+  {
+    "name": "ElytraSwapper",
+    "description": "A Minecraft mod that uses a keybind to swap chestplate and elytra for quick switching between flight and defense.",
+    "skills": ["Java", "Gradle", "FabricMC", "Fabric API"],
+    "link": "https://github.com/SaolGhra/ElytraSwapper"
+  },
+  {
     "name": "FloatWeb | Building tomorrow's web. today",
     "description": "A web development agency that specializes in creating modern, responsive, and user-friendly websites for businesses and individuals.",
     "skills": ["Html", "CSS", "JavaScript"],
