@@ -1,15 +1,21 @@
 [
   {
+    "name": "Armor HUD",
+    "description": "Minecraft mod that displays the durability of your armor on your screen. To the left of your offhand slot, you will see the durability of your helmet, chestplate, leggings, and boots.",
+    "skills": ["Java", "Gradle", "FabricMC", "Fabric API"],
+    "link": "https://modrinth.com/mod/armor-hud"
+  },
+  {
     "name": "Hot Experience",
     "description": "A Fabric Minecraft mod for 1.21 that swaps bottles of experience and totems of undying using a keybind, useful for PvP situations.",
     "skills": ["Java", "Gradle", "FabricMC", "Fabric API"],
-    "link": "https://github.com/SaolGhra/Hot-Experience"
+    "link": "https://modrinth.com/mod/hot-experience"
   },
   {
-    "name": "ElytraSwapper",
+    "name": "Elytra Swapper",
     "description": "A Minecraft mod that uses a keybind to swap chestplate and elytra for quick switching between flight and defense.",
     "skills": ["Java", "Gradle", "FabricMC", "Fabric API"],
-    "link": "https://github.com/SaolGhra/ElytraSwapper"
+    "link": "https://modrinth.com/mod/elytra-swapper"
   },
   {
     "name": "FloatWeb | Building tomorrow's web. today",
