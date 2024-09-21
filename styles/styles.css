@@ -12,6 +12,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section {
@@ -21,10 +24,10 @@ body {
 /* Header */
 
 .header {
-  position: relative;
+  position: sticky;
   top: 3vh;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
   width: calc(75% - 40px);
   background-color: rgba(167, 151, 151, 0.8);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -400,6 +403,7 @@ canvas {
 #contact {
   margin-top: 15vh;
   color: #ffffff;
+  width: 70%;
 }
 
 #contact h2 {
@@ -495,6 +499,7 @@ main {
   display: grid;
   justify-content: center;
   min-width: 1080px;
+  margin-top: calc(5vh - 1px);
 }
 
 #experience {
@@ -551,9 +556,10 @@ main {
 
   main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     min-width: 1080px;
+    align-items: center;
   }
 
   #about,
