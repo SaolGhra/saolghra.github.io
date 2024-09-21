@@ -288,10 +288,10 @@ canvas {
 .skill:hover::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
   /* background: linear-gradient(to bottom right, #0056b3, #007bff); */
   background: linear-gradient(to bottom right, #474f57, #203750);
   border-radius: 25px;
