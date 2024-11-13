@@ -18,6 +18,12 @@
     "link": "https://modrinth.com/mod/elytra-swapper"
   },
   {
+    "name": "EarthMC VoteParty Notifier",
+    "description": "A Chrome extension that helps you track EarthMC's Vote Party progress and search for players, towns, and nations.",
+    "skills": ["JavaScript", "Chrome Extensions", "HTML", "CSS"],
+    "link": "https://github.com/SaolGhra/EarthMC-VoteParty-Notifier"
+  },
+  {
     "name": "Hot Experience",
     "description": "A Fabric Minecraft mod for 1.21 that swaps bottles of experience and totems of undying using a keybind, useful for PvP situations.",
     "skills": ["Java", "Gradle", "FabricMC", "Fabric API"],
