@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>SaolGhra - Portfolio - Spencer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spencer Bullock | Software Engineer</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
     <meta
       name="description"
       content="Spencer Bullock's Portfolio - A student and aspiring full-stack software engineer with expertise in HTML, CSS, Python, Java, JavaScript, C#, C++, and web development."
@@ -61,95 +70,215 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-HME8PQRCDV"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-HME8PQRCDV"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-HME8PQRCDV");
-  </script>
-
-  <body>
-    <div id="canvas-container">
-      <canvas></canvas>
-      <div id="red-circle" class="circle"></div>
-      <div id="purple-circle" class="circle"></div>
+  gtag("config", "G-HME8PQRCDV");
+</script>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+  
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <span>{</span>sb<span>}</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
     </div>
+  </header>
 
-    <div class="header">
-      <div class="social-icons left">
-        <a href="https://www.github.com/saolghra/" class="social-icon"
-          ><img
-            src="../assets/devicons/github.svg"
-            alt="GitHub"
-            style="width: 24px; height: 24px"
-        /></a>
-      </div>
-      <ul class="menu">
-        <li><a href="https://www.saolghra.co.uk/">Home</a></li>
-        <li><a href="./pages/projects">Projects</a></li>
-        <li><a href="./pages/skills">Skills</a></li>
-        <li><a href="./pages/contact">Contact</a></li>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="container">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
       </ul>
-      <div class="social-icons right">
-        <a href="mailto:contact@saolghra.co.uk" class="social-icon"
-          ><img
-            src="../assets/devicons/email.svg"
-            alt="Email"
-            style="width: 24px; height: 24px"
-        /></a>
+    </div>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-intro">Hi, my name is</p>
+        <h1 class="hero-name">Spencer Bullock.</h1>
+        <h2 class="hero-title">I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+        <p class="hero-description">
+          I'm a UK-based software engineer specializing in building exceptional digital experiences.
+          Currently, I'm focused on creating intuitive and scalable software solutions.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+      
+      <div class="terminal-box">
+        <div class="terminal-header">
+          <div class="terminal-btn terminal-btn-red"></div>
+          <div class="terminal-btn terminal-btn-yellow"></div>
+          <div class="terminal-btn terminal-btn-green"></div>
+          <div class="terminal-title">zsh ~ terminal</div>
+        </div>
+        <div class="terminal-body">
+          <!-- Content goes here -->
+        </div>
+        <div class="terminal-input-line">
+          <span class="terminal-prompt">$</span>
+          <input type="text" class="terminal-input" placeholder="">
+        </div>
       </div>
     </div>
-
-    <main>
-      <section id="experience" class="main-section">
-        <h2>Experience</h2>
-        <div class="timeline"></div>
-      </section>
-
-      <section id="current-projects" class="main-section">
-        <h2>Current Projects</h2>
-        <div class="project-timeline"></div>
-      </section>
-
-      <!-- <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="timeline"></div>
-      </section> -->
-
-      <div class="divider" id="divider"></div>
-
-      <section id="about" class="main-section">
-        <h2>About</h2>
-        <p>
-          Hey, I'm Spencer Bullock, a full-stack software engineer with a
-          passion for turning ideas into functional solutions.<br /><br />
-
-          Proficient in 13 languages and 13 frameworks, including HTML, CSS,
-          Python, Java, JavaScript, C#, C++, and Golang, I specialize in web and
-          app development.<br /><br />
-
-          Outside of coding, you'll find me gaming, honing my music skills, and
-          hanging out with friends.<br /><br />
-
-          Excited for the next challenge in software engineering!
+  </section>
+  
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-description">A selection of my recent work and technical explorations.</p>
+        
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web development">Web</button>
+          <button class="filter-btn" data-filter="game development">Game Mods</button>
+          <button class="filter-btn" data-filter="data science">Data Science</button>
+        </div>
+      </div>
+      
+      <!-- Bento Box Projects Grid -->
+      <div class="bento-grid" id="projects-grid">
+        <!-- Projects will be populated via JavaScript -->
+      </div>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <button class="view-more-btn">View More Projects</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Modal -->
+  <div class="projects-modal" id="projects-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>All Projects</h3>
+        <button class="modal-close" id="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web development">Web</button>
+          <button class="filter-btn" data-filter="game development">Game Mods</button>
+          <button class="filter-btn" data-filter="data science">Data Science</button>
+        </div>
+        <div class="modal-projects-grid" id="modal-projects-grid">
+          <!-- All projects will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-description">
+          A selection of technologies and tools I've worked with and enjoy using.
         </p>
-      </section>
-    </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script type="module" src="./scripts/animin.js"></script>
-    <script src="./scripts/header.js"></script>
-    <script type="module" src="./scripts/fluidbg.js"></script>
-    <script src="scripts/current.js"></script>
-    <script src="scripts/experiences.js"></script>
-  </body>
+      </div>
+      
+      <div class="skills-container" id="skills-container">
+        <!-- Skills will be populated from JSON data -->
+        <div class="loading-container">
+          <div class="loading-spinner"></div>
+          <p>Loading skills...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-description">
+          Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+        </p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <p class="contact-text">
+            I'm currently open to new opportunities, collaborations, and interesting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </p>
+          
+          <div class="contact-links">
+            <a href="mailto:email@example.com" class="contact-link">
+              <i class="fas fa-envelope contact-link-icon"></i>
+              <span>email@example.com</span>
+            </a>
+            <a href="https://github.com/saolghra" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-github contact-link-icon"></i>
+              <span>github.com/saolghra</span>
+            </a>
+            <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-linkedin contact-link-icon"></i>
+              <span>linkedin.com/in/spencer-bullock</span>
+            </a>
+          </div>
+        </div>
+        
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Scripts -->
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
 </html>
