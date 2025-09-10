@@ -1,0 +1,41 @@
+{
+  "languages": [
+    { "name": "HTML5", "icon": "assets/skills/html5.svg" },
+    { "name": "CSS3", "icon": "assets/skills/css3.svg" },
+    { "name": "JavaScript", "icon": "assets/skills/javascript.svg" },
+    { "name": "Python", "icon": "assets/skills/python.svg" },
+    { "name": "Java", "icon": "assets/skills/java.svg" },
+    { "name": "C#", "icon": "assets/skills/csharp.svg" },
+    { "name": "MySQL", "icon": "assets/skills/mysql.svg" },
+    { "name": "PHP", "icon": "assets/skills/php.svg" }
+  ],
+  "frameworks": [
+    { "name": "Node.js", "icon": "assets/skills/nodejs.svg" },
+    { "name": "jQuery", "icon": "assets/skills/jquery.svg" },
+    { "name": "Bash", "icon": "assets/skills/bash.svg" },
+    { "name": "Apache", "icon": "assets/skills/apache.svg" },
+    { "name": "DiscordJS", "icon": "assets/skills/discordjs.svg" },
+    { "name": "OpenCV", "icon": "assets/skills/opencv.svg" },
+    { "name": "Flask", "icon": "assets/skills/flask.svg" },
+    { "name": "Pandas", "icon": "assets/skills/pandas.svg" },
+    { "name": "Tensorflow", "icon": "assets/skills/tensorflow.svg" },
+    { "name": "Axios", "icon": "assets/skills/axios.svg" },
+    { "name": "Express", "icon": "assets/skills/express.svg" },
+    { "name": "GSAP", "icon": "assets/skills/gsap.svg" },
+    { "name": "FabricMC", "icon": "assets/skills/fabric.png" },
+    { "name": "Paper", "icon": "assets/skills/paper.png" },
+    { "name": "Bukkit", "icon": "assets/skills/bukkit.png" },
+    { "name": "Spigot", "icon": "assets/skills/spigot.png" },
+    { "name": "Folia", "icon": "assets/skills/folia.png" }
+  ],
+  "tools": [
+    { "name": "Git", "icon": "assets/skills/git.svg" },
+    { "name": "Docker", "icon": "assets/skills/docker.svg" },
+    { "name": "VS Code", "icon": "assets/skills/vscode.svg" },
+    { "name": "Linux", "icon": "assets/skills/linux.svg" },
+    { "name": "Pterodactyl", "icon": "assets/skills/pterodactyl.svg" },
+    { "name": "Gradle", "icon": "assets/skills/gradle.svg" },
+    { "name": "Maven", "icon": "assets/skills/maven.svg" },
+    { "name": "GitHub", "icon": "assets/skills/github.svg" }
+  ]
+}

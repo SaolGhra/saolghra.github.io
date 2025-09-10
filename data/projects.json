@@ -1,0 +1,139 @@
+[
+  {
+    "name": "FloatWeb | Building tomorrow's web. today",
+    "description": "A web development agency that specializes in creating modern, responsive, and user-friendly websites for businesses and individuals.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "image": "assets/projects/floatweb.png",
+    "link": "https://floatweb.co.uk/",
+    "github": null,
+    "category": "Web Development",
+    "featured": true
+  },
+  {
+    "name": "Armor HUD",
+    "description": "Minecraft mod that displays the durability of your armor on your screen. To the left of your offhand slot, you will see the durability of your helmet, chestplate, leggings, and boots.",
+    "skills": ["Java", "Gradle", "FabricMC", "Fabric API"],
+    "image": "assets/projects/armorhud.gif",
+    "link": "https://modrinth.com/mod/armor-hud",
+    "github": "https://github.com/saolghra/armor-hud",
+    "category": "Game Development",
+    "featured": true
+  },
+  {
+    "name": "Elytra Swapper",
+    "description": "A Minecraft mod that uses a keybind to swap chestplate and elytra for quick switching between flight and defense.",
+    "skills": ["Java", "Gradle", "FabricMC", "Fabric API"],
+    "image": "assets/projects/elytraswapper.gif",
+    "link": "https://modrinth.com/mod/elytra-swapper",
+    "github": "https://github.com/saolghra/elytraswapper",
+    "category": "Game Development",
+    "featured": true
+  },
+  {
+    "name": "Game Information Scraper - Discontuinued",
+    "description": "A web scraper that scrapes specific game information from multiple websites, perfectly validated to ensure the information is correct and up-to-date.",
+    "skills": ["JavaScript"],
+    "image": "assets/projects/project-gamescraper.jpg",
+    "link": null,
+    "github": null,
+    "category": "Web Scraping",
+    "featured": false
+  },
+  {
+    "name": "Nexarda Bot",
+    "description": "A discord bot that provides game information and statistics for the Nexarda Discord server. - Still in development.",
+    "skills": ["JavaScript"],
+    "image": "assets/projects/project-nexarda.jpg",
+    "link": null,
+    "github": null,
+    "category": "Bot Development",
+    "featured": false
+  },
+  {
+    "name": "SaolGhra.co.uk Current - Still in development",
+    "description": "My Personal Portfolio for all my projects, work and skills. - Still in development.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "image": "assets/projects/portfolio.png",
+    "link": "https://saolghra.co.uk/",
+    "github": null,
+    "category": "Web Development",
+    "featured": true
+  },
+  {
+    "name": "Airliners Information Scraper",
+    "description": "A web scraper that scrapes specific airliner information from multiple websites, perfectly validated to ensure the information is correct and up-to-date.",
+    "skills": ["JavaScript"],
+    "image": "assets/projects/project-airlinerscraper.jpg",
+    "link": null,
+    "github": "https://github.com/SaolGhra/AirlinersScraper",
+    "category": "Web Development",
+    "featured": false
+  },
+  {
+    "name": "Real-time Facial and Hand Landmark Detection",
+    "description": "A real-time Python application for detecting facial and hand landmarks using OpenCV and Mediapipe.",
+    "skills": [
+      "Python",
+      "OpenCV",
+      "Mediapipe",
+      "Computer Vision",
+      "Machine Learning",
+      "Image Processing"
+    ],
+    "image": "assets/projects/project-facial.jpg",
+    "link": null,
+    "github": "https://github.com/SaolGhra/Python-Facial-Recognition",
+    "category": "Data Science",
+    "featured": false
+  },
+  {
+    "name": "Spinning Seal",
+    "description": "A spinning seal animation with cool music.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "image": "assets/projects/spinningseal.png",
+    "link": "https://saolghra.co.uk/spinningseal/",
+    "github": null,
+    "category": "Web Development",
+    "featured": false
+  },
+  {
+    "name": "Shibes",
+    "description": "A shibe image fetcher with a counter.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "image": "assets/projects/shibes.png",
+    "link": "https://saolghra.co.uk/shibes/",
+    "github": null,
+    "category": "Web Development",
+    "featured": false
+  },
+  {
+    "name": "Flappy Bird AI",
+    "description": "An AI that learns to play Flappy Bird using genetic algorithms.",
+    "skills": ["Java", "Genetic Algorithms", "Machine Learning", "AI", "Processing", "Neural Networks"],
+    "image": "assets/projects/flappybirdai.png",
+    "link": null,
+    "github": null,
+    "category": "Data Science",
+    "featured": true
+  },
+  {
+    "name": "Doghouse",
+    "description": "A website made for a client during my industry placement.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "image": "assets/projects/doghouseproject.png",
+    "link": "https://www.saolghra.co.uk/Doghouse-Website/",
+    "github": null,
+    "category": "Web Development",
+    "featured": true
+  },
+  {
+    "name": "Expense Tracker",
+    "description": "A Kotlin Multiplatform application that helps track work hours.",
+    "skills": ["Kotlin", "Multiplatform"],
+    "image": "assets/projects/expense.png",
+    "link": null,
+    "github": null,
+    "category": "Mobile Development",
+    "featured": false
+  }
+]

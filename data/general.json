@@ -1,0 +1,55 @@
+{
+  "siteTitle": "Spencer Bullock | Software Engineer",
+  "hero": {
+    "intro": "Hi, my name is",
+    "name": "Spencer Bullock.",
+    "description": "I'm a UK-based software engineer specializing in building exceptional digital experiences. Currently, I'm focused on creating intuitive and scalable software solutions.",
+    "typingTexts": [
+      "Software Engineer",
+      "Mod Developer",
+      "Web Developer",
+      "System Designer"
+    ]
+  },
+  "contact": {
+    "email": "contact@saolghra.co.uk",
+    "github": {
+      "url": "https://github.com/saolghra",
+      "username": "github.com/saolghra"
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/spencer-b-b1b1b824b/",
+      "username": "linkedin.com/in/saolghra"
+    }
+  },
+  "footer": {
+    "copyright": "&copy; 2025 SaolGhra. All Rights Reserved."
+  },
+  "terminal": {
+    "title": "zsh ~ terminal",
+    "lines": [
+      {
+        "command": "whoami",
+        "output": "saolghra"
+      },
+      {
+        "command": "cat about.txt",
+        "output": "Hi! I'm Spencer, a software engineer who loves crafting clean code and elegant solutions."
+      },
+      {
+        "command": "sudo make-coffee",
+        "output": "Error: Coffee maker not found. Have you tried turning it off and on again? Remember: 418 I'm a teapot."
+      }
+    ],
+    "extraCommands": {
+      "help": "Available commands: whoami, cat, ls, cd, pwd, clear, help, neofetch, cmatrix, reboot",
+      "neofetch": "",
+      "cmatrix": ""
+    }
+  },
+  "files": {
+    "about.txt": "Hi! I'm Spencer, a software engineer who loves crafting clean code and elegant solutions.",
+    "skills.txt": "Languages: HTML5, CSS3, JavaScript, Python, Java, C#, MySQL, PHP\nFrameworks: Node.js, jQuery, Bash, Apache, DiscordJS, OpenCV, Flask, Pandas, Tensorflow, Axios, Express, GSAP, FabricMC, Paper, Bukkit, Spigot, Folia\nTools: Git, Docker, VS Code, Linux, Pterodactyl, Gradle, Maven, GitHub",
+    "contact.txt": "Email: contact@saolghra.co.uk\nGitHub: https://github.com/saolghra\nLinkedIn: https://www.linkedin.com/in/spencer-b-b1b1b824b/"
+  }
+}
