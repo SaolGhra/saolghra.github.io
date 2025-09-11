@@ -42,7 +42,7 @@
       }
     ],
     "extraCommands": {
-      "help": "Available commands: whoami, cat, ls, cd, pwd, clear, help, neofetch, cmatrix, reboot",
+      "help": "Available commands: whoami, cat, ls, cd, clear, help, neofetch, cmatrix, reboot",
       "neofetch": "",
       "cmatrix": ""
     }

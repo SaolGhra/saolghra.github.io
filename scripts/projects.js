@@ -64,11 +64,23 @@ function createProjectCard(project) {
   } else {
     const fallback = document.createElement('div');
     fallback.className = 'project-img project-img-fallback';
-    fallback.style.backgroundColor = '#1a1a1a';
-    const initials = project.name
-      ? project.name.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase()
-      : 'P';
-    fallback.innerHTML = `<span>${initials}</span>`;
+
+    // Check if custom placeholder text is provided
+    if (project.placeholderText) {
+      fallback.innerHTML = `
+        <div class="placeholder-content">
+          <div class="placeholder-icon">📷</div>
+          <div class="placeholder-text">${project.placeholderText}</div>
+        </div>
+      `;
+    } else {
+      // Default fallback with project initials
+      const initials = project.name
+        ? project.name.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase()
+        : 'P';
+      fallback.innerHTML = `<span>${initials}</span>`;
+    }
+
     card.appendChild(fallback);
   }
 

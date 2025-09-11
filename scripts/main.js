@@ -836,7 +836,7 @@ function processTerminalCommand(command, terminalBody, inputLine, extraCommands 
         }, 100);
         return; // Don't add output for clear
       case 'help':
-        output = 'Available commands: whoami, cat, ls, cd, pwd, clear, help, neofetch, cmatrix, reboot';
+        output = 'Available commands: whoami, cat, ls, cd, clear, help, neofetch, cmatrix, reboot';
         break;
       case 'neofetch':
         // Load ASCII logo from file and format like traditional neofetch

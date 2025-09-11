@@ -1,5 +1,5 @@
 [
-  {
+    {
     "name": "FloatWeb | Building tomorrow's web. today",
     "description": "A web development agency that specializes in creating modern, responsive, and user-friendly websites for businesses and individuals.",
     "skills": ["HTML", "CSS", "JavaScript"],
@@ -33,7 +33,8 @@
     "name": "Game Information Scraper - Discontuinued",
     "description": "A web scraper that scrapes specific game information from multiple websites, perfectly validated to ensure the information is correct and up-to-date.",
     "skills": ["JavaScript", "Node.js", "Axios", "Cheerio", "APIs"],
-    "image": "assets/projects/project-gamescraper.jpg",
+    "image": null,
+    "placeholderText": "Game information scraper interface showing data collection and validation features",
     "link": null,
     "github": null,
     "category": "Web Development",
@@ -43,7 +44,8 @@
     "name": "Nexarda Bot",
     "description": "A discord bot that provides game information and statistics for the Nexarda Discord server. - Still in development.",
     "skills": ["JavaScript", "Node.js", "DiscordJS", "APIs"],
-    "image": "assets/projects/project-nexarda.jpg",
+    "image": null,
+    "placeholderText": "Nexarda Discord bot interface showing game statistics and server management features",
     "link": "https://saolghra.co.uk",
     "github": null,
     "category": "Bot Development",
@@ -63,7 +65,8 @@
     "name": "Airliners Information Scraper",
     "description": "A web scraper that scrapes specific airliner information from multiple websites, perfectly validated to ensure the information is correct and up-to-date.",
     "skills": ["JavaScript", "Node.js", "Axios", "Cheerio", "APIs"],
-    "image": "assets/projects/project-airlinerscraper.jpg",
+    "image": null,
+    "placeholderText": "Airliners information scraper showing aviation data collection and processing interface",
     "link": "https://saolghra.co.uk",
     "github": "https://github.com/SaolGhra/AirlinersScraper",
     "category": "Web Development",
@@ -80,7 +83,8 @@
       "Machine Learning",
       "Image Processing"
     ],
-    "image": "assets/projects/project-facial.jpg",
+    "image": null,
+    "placeholderText": "Facial and hand landmark detection application showing real-time computer vision processing",
     "link": "https://saolghra.co.uk",
     "github": "https://github.com/SaolGhra/Python-Facial-Recognition",
     "category": "Data Science",
