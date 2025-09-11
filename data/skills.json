@@ -36,7 +36,6 @@
     { "name": "Pterodactyl", "icon": "assets/skills/pterodactyl.svg" },
     { "name": "Gradle", "icon": "assets/skills/gradle.svg" },
     { "name": "Maven", "icon": "assets/skills/maven.svg" },
-
     { "name": "GitHub", "icon": "assets/skills/github_white.svg" }
   ]
 }
