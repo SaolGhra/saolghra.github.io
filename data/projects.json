@@ -36,7 +36,7 @@
     "image": "assets/projects/project-gamescraper.jpg",
     "link": null,
     "github": null,
-    "category": "Web Scraping",
+    "category": "Web Development",
     "featured": false
   },
   {
@@ -57,7 +57,7 @@
     "link": "https://saolghra.co.uk/",
     "github": null,
     "category": "Web Development",
-    "featured": true
+    "featured": false
   },
   {
     "name": "Airliners Information Scraper",
@@ -137,10 +137,20 @@
     "featured": false
   },
   {
-    "name": "Badges Plugin",
+    "name": "Badges",
     "description": "A Minecraft plugin for the Folia server platform that integrates with Towny to add badges to players for various achievements and statuses, such as having premium, being a donator, or being a staff member.",
     "skills": ["Java", "Folia", "Towny", "Minecraft Plugin Development", "Paper"],
     "image": "assets/projects/badgesfoliaplugin.png",
+    "link": null,
+    "github": null,
+    "category": "Game Development",
+    "featured": true
+  },
+  {
+    "name": "SkillPass",
+    "description": "A Minecraft plugin for the Folia server platform that adds a full in-game quest system with custom rewards and GUI. Players can complete quests to earn rewards and progress through different skill levels.",
+    "skills": ["Java", "Folia", "Minecraft Plugin Development", "Paper"],
+    "image": "assets/projects/skillpassfoliaplugin.png",
     "link": null,
     "github": null,
     "category": "Game Development",

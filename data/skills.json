@@ -23,9 +23,9 @@
     { "name": "Express", "icon": "assets/skills/express.svg" },
     { "name": "GSAP", "icon": "assets/skills/gsap.svg" },
     { "name": "FabricMC", "icon": "assets/skills/fabric.png" },
-    { "name": "Paper", "icon": "assets/skills/paper.png" },
+    { "name": "Paper", "icon": "assets/skills/papermc.svg" },
     { "name": "Bukkit", "icon": "assets/skills/bukkit.png" },
-    { "name": "Spigot", "icon": "assets/skills/spigot.png" },
+    { "name": "Spigot", "icon": "assets/skills/spigot.svg" },
     { "name": "Folia", "icon": "assets/skills/folia.png" }
   ],
   "tools": [
@@ -36,6 +36,6 @@
     { "name": "Pterodactyl", "icon": "assets/skills/pterodactyl.svg" },
     { "name": "Gradle", "icon": "assets/skills/gradle.svg" },
     { "name": "Maven", "icon": "assets/skills/maven.svg" },
-    { "name": "GitHub", "icon": "assets/skills/github.svg" }
+    { "name": "GitHub", "icon": "assets/skills/github_white.svg" }
   ]
 }

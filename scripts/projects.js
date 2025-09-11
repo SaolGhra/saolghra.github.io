@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
   await loadAllProjects();
-  setupProjectFilters();
+  await setupProjectFilters();
   applyThemePreference();
 });
 
@@ -86,18 +86,19 @@ function createProjectCard(project) {
   description.textContent = project.description || 'No description available';
   content.appendChild(description);
 
-  if (project.description && project.description.length > 120) {
-    const readMoreBtn = document.createElement('button');
+  // Only add read more button if description is long enough to be truncated
+  let readMoreBtn = null;
+  if (project.description && project.description.length > 100) {
+    readMoreBtn = document.createElement('button');
     readMoreBtn.className = 'read-more-btn';
-    readMoreBtn.textContent = 'Read More →';
+    readMoreBtn.textContent = 'Read More';
     readMoreBtn.addEventListener('click', function (e) {
       e.stopPropagation();
       description.classList.toggle('project-description-expanded');
       this.textContent = description.classList.contains('project-description-expanded')
-        ? 'Read Less ←'
-        : 'Read More →';
+        ? 'Read Less'
+        : 'Read More';
     });
-    content.appendChild(readMoreBtn);
   }
 
   if (project.skills && project.skills.length) {
@@ -115,6 +116,15 @@ function createProjectCard(project) {
   const linksContainer = document.createElement('div');
   linksContainer.className = 'project-links';
 
+  // Create left container for read more button
+  const linksLeft = document.createElement('div');
+  linksLeft.className = 'project-links-left';
+
+  // Create right container for GitHub and website links
+  const linksRight = document.createElement('div');
+  linksRight.className = 'project-links-right';
+
+  // Add GitHub link to right container
   if (project.github) {
     const githubLink = document.createElement('a');
     githubLink.href = project.github;
@@ -123,9 +133,10 @@ function createProjectCard(project) {
     githubLink.rel = 'noopener noreferrer';
     githubLink.innerHTML = '<i class="fab fa-github"></i>';
     githubLink.title = 'View Source Code';
-    linksContainer.appendChild(githubLink);
+    linksRight.appendChild(githubLink);
   }
 
+  // Add website link to right container
   if (project.link) {
     const demoLink = document.createElement('a');
     demoLink.href = project.link;
@@ -134,8 +145,17 @@ function createProjectCard(project) {
     demoLink.rel = 'noopener noreferrer';
     demoLink.innerHTML = '<i class="fas fa-external-link-alt"></i>';
     demoLink.title = 'View Live Project';
-    linksContainer.appendChild(demoLink);
+    linksRight.appendChild(demoLink);
   }
+
+  // Add read more button to left container if it exists
+  if (readMoreBtn) {
+    linksLeft.appendChild(readMoreBtn);
+  }
+
+  // Add both containers to main links container
+  linksContainer.appendChild(linksLeft);
+  linksContainer.appendChild(linksRight);
 
   content.appendChild(linksContainer);
   card.appendChild(content);
@@ -161,11 +181,48 @@ function setupProjectExpansion() {
   });
 }
 
-function setupProjectFilters() {
+async function setupProjectFilters() {
+  // Get all unique categories from projects
+  const projectsData = await fetchJsonData('data/projects.json');
+  const categories = new Set(['all']); // Always include 'all'
+  
+  if (projectsData && Array.isArray(projectsData)) {
+    projectsData.forEach(project => {
+      if (project.category) {
+        categories.add(project.category.toLowerCase());
+      }
+    });
+  }
+  
+  // Generate filter buttons for both main and modal
+  const filterContainers = document.querySelectorAll('.project-filters, .modal-filters');
+  
+  filterContainers.forEach(container => {
+    if (container) {
+      container.innerHTML = '';
+      
+      // Create buttons for each category
+      Array.from(categories).sort().forEach(category => {
+        const button = document.createElement('button');
+        button.className = `filter-btn${category === 'all' ? ' active' : ''}`;
+        button.setAttribute('data-filter', category);
+        button.textContent = category === 'all' ? 'All' : 
+          category.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        container.appendChild(button);
+      });
+    }
+  });
+  
+  // Setup event listeners for all filter buttons
   const filterButtons = document.querySelectorAll('.filter-btn');
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      document.querySelector('.filter-btn.active')?.classList.remove('active');
+      // Remove active class from all buttons in the same container
+      const container = button.closest('.project-filters, .modal-filters');
+      if (container) {
+        container.querySelector('.filter-btn.active')?.classList.remove('active');
+      }
+      
       button.classList.add('active');
       const filterValue = button.getAttribute('data-filter');
       filterProjects(filterValue);
@@ -174,26 +231,27 @@ function setupProjectFilters() {
 }
 
 function filterProjects(filterValue) {
-  const projectCards = document.querySelectorAll('.project-card');
-  const filterMap = {
-    'web': ['web development', 'ui/ux', 'web game', 'web animation'],
-    'software': ['software', 'utility', 'data science', 'computer vision', 'graphics'],
-    'mod': ['game development', 'mod', 'minecraft'],
-  };
-  projectCards.forEach(card => {
-    if (filterValue === 'all') {
-      card.classList.remove('filtered-out');
-      return;
-    }
-    const categories = card.getAttribute('data-categories') || '';
-    const matches = filterMap[filterValue]
-      ? filterMap[filterValue].some(term => categories.includes(term))
-      : categories.includes(filterValue);
-    if (matches) {
-      card.classList.remove('filtered-out');
-    } else {
-      card.classList.add('filtered-out');
-    }
+  // Filter both main projects and modal projects
+  const projectGrids = document.querySelectorAll('#projects-grid, #modal-projects-grid');
+  
+  projectGrids.forEach(grid => {
+    const projectCards = grid.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+      if (filterValue === 'all') {
+        card.classList.remove('filtered-out');
+        return;
+      }
+      
+      const categories = card.getAttribute('data-categories') || '';
+      const matches = categories.includes(filterValue);
+      
+      if (matches) {
+        card.classList.remove('filtered-out');
+      } else {
+        card.classList.add('filtered-out');
+      }
+    });
   });
 }
 

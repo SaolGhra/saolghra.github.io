@@ -407,73 +407,73 @@ function setupProjectExpansion() {
   });
 }
 
-// Setup project filters
-function setupProjectFilters() {
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  console.log('Found filter buttons:', filterButtons.length);
-  
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Make this button active
-      document.querySelector('.filter-btn.active')?.classList.remove('active');
-      button.classList.add('active');
-      
-      // Get filter value
-      const filterValue = button.getAttribute('data-filter');
-      console.log('Filter clicked:', filterValue);
-      
-      // Filter projects
-      filterProjects(filterValue);
-    });
-  });
-}
+// Setup project filters - MOVED TO projects.js
+// function setupProjectFilters() {
+//   const filterButtons = document.querySelectorAll('.filter-btn');
+//   console.log('Found filter buttons:', filterButtons.length);
 
-// Filter projects function with improved category matching
-function filterProjects(filterValue) {
-  const projectsContainer = document.getElementById('projects-grid') || document.querySelector('.bento-grid');
-  const projectCards = projectsContainer ? projectsContainer.querySelectorAll('.project-card') : document.querySelectorAll('.project-card');
-  console.log('Found project cards:', projectCards.length);
-  console.log('Filtering by:', filterValue);
-  
-  // Create mapping between filter values and category terms to match
-  const filterMap = {
-    'web development': ['web development', 'ui/ux', 'web game', 'web animation', 'web scraping'],
-    'game development': ['game development'],
-    'data science': ['data science']
-  };
-  
-  projectCards.forEach((card, index) => {
-    const categoriesAttribute = card.getAttribute('data-categories');
-    console.log(`Card ${index} categories:`, categoriesAttribute);
-    
-    // Show all projects if "All" is selected
-    if (filterValue === 'all') {
-      card.classList.remove('filtered-out');
-      return;
-    }
-    
-    // Handle null/empty categories gracefully
-    if (!categoriesAttribute) {
-      card.classList.add('filtered-out');
-      return;
-    }
-    
-    // Check either for direct match or using the mapping
-    const matchesFilter = filterMap[filterValue] ? 
-      filterMap[filterValue].some(term => 
-        categoriesAttribute.toLowerCase().includes(term.toLowerCase())
-      ) : 
-      categoriesAttribute.toLowerCase().includes(filterValue.toLowerCase());
-    
-    console.log(`Card ${index} matches ${filterValue}:`, matchesFilter);
-    
-    if (matchesFilter) {
-      card.classList.remove('filtered-out');
-    } else {
-      card.classList.add('filtered-out');
-    }
-  });
-}
+//   filterButtons.forEach(button => {
+//     button.addEventListener('click', () => {
+//       // Make this button active
+//       document.querySelector('.filter-btn.active')?.classList.remove('active');
+//       button.classList.add('active');
+
+//       // Get filter value
+//       const filterValue = button.getAttribute('data-filter');
+//       console.log('Filter clicked:', filterValue);
+
+//       // Filter projects
+//       filterProjects(filterValue);
+//     });
+//   });
+// }
+
+// Filter projects function - MOVED TO projects.js
+// function filterProjects(filterValue) {
+//   const projectsContainer = document.getElementById('projects-grid') || document.querySelector('.bento-grid');
+//   const projectCards = projectsContainer ? projectsContainer.querySelectorAll('.project-card') : document.querySelectorAll('.project-card');
+//   console.log('Found project cards:', projectCards.length);
+//   console.log('Filtering by:', filterValue);
+
+//   // Create mapping between filter values and category terms to match
+//   const filterMap = {
+//     'web development': ['web development', 'ui/ux', 'web game', 'web animation', 'web scraping'],
+//     'game development': ['game development'],
+//     'data science': ['data science']
+//   };
+
+//   projectCards.forEach((card, index) => {
+//     const categoriesAttribute = card.getAttribute('data-categories');
+//     console.log(`Card ${index} categories:`, categoriesAttribute);
+
+//     // Show all projects if "All" is selected
+//     if (filterValue === 'all') {
+//       card.classList.remove('filtered-out');
+//       return;
+//     }
+
+//     // Handle null/empty categories gracefully
+//     if (!categoriesAttribute) {
+//       card.classList.add('filtered-out');
+//       return;
+//     }
+
+//     // Check either for direct match or using the mapping
+//     const matchesFilter = filterMap[filterValue] ?
+//       filterMap[filterValue].some(term =>
+//         categoriesAttribute.toLowerCase().includes(term.toLowerCase())
+//       ) :
+//       categoriesAttribute.toLowerCase().includes(filterValue.toLowerCase());
+
+//     console.log(`Card ${index} matches ${filterValue}:`, matchesFilter);
+
+//     if (matchesFilter) {
+//       card.classList.remove('filtered-out');
+//     } else {
+//       card.classList.add('filtered-out');
+//     }
+//   });
+// }
 
 // Load skills from JSON
 async function loadSkills() {
