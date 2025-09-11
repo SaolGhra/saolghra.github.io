@@ -32,7 +32,7 @@
   {
     "name": "Game Information Scraper - Discontuinued",
     "description": "A web scraper that scrapes specific game information from multiple websites, perfectly validated to ensure the information is correct and up-to-date.",
-    "skills": ["JavaScript"],
+    "skills": ["JavaScript", "Node.js", "Axios", "Cheerio", "APIs"],
     "image": "assets/projects/project-gamescraper.jpg",
     "link": null,
     "github": null,
@@ -42,9 +42,9 @@
   {
     "name": "Nexarda Bot",
     "description": "A discord bot that provides game information and statistics for the Nexarda Discord server. - Still in development.",
-    "skills": ["JavaScript"],
+    "skills": ["JavaScript", "Node.js", "DiscordJS", "APIs"],
     "image": "assets/projects/project-nexarda.jpg",
-    "link": null,
+    "link": "https://saolghra.co.uk",
     "github": null,
     "category": "Bot Development",
     "featured": false
@@ -62,9 +62,9 @@
   {
     "name": "Airliners Information Scraper",
     "description": "A web scraper that scrapes specific airliner information from multiple websites, perfectly validated to ensure the information is correct and up-to-date.",
-    "skills": ["JavaScript"],
+    "skills": ["JavaScript", "Node.js", "Axios", "Cheerio", "APIs"],
     "image": "assets/projects/project-airlinerscraper.jpg",
-    "link": null,
+    "link": "https://saolghra.co.uk",
     "github": "https://github.com/SaolGhra/AirlinersScraper",
     "category": "Web Development",
     "featured": false
@@ -81,7 +81,7 @@
       "Image Processing"
     ],
     "image": "assets/projects/project-facial.jpg",
-    "link": null,
+    "link": "https://saolghra.co.uk",
     "github": "https://github.com/SaolGhra/Python-Facial-Recognition",
     "category": "Data Science",
     "featured": false
@@ -111,7 +111,7 @@
     "description": "An AI that learns to play Flappy Bird using genetic algorithms.",
     "skills": ["Java", "Genetic Algorithms", "Machine Learning", "AI", "Processing", "Neural Networks"],
     "image": "assets/projects/flappybirdai.png",
-    "link": null,
+    "link": "https://saolghra.co.uk",
     "github": null,
     "category": "Data Science",
     "featured": true
@@ -129,9 +129,9 @@
   {
     "name": "Expense Tracker",
     "description": "A Kotlin Multiplatform application that helps track work hours.",
-    "skills": ["Kotlin", "Multiplatform"],
+    "skills": ["Kotlin", "Multiplatform", "Mobile Development", "Android"],
     "image": "assets/projects/expense.png",
-    "link": null,
+    "link": "https://saolghra.co.uk",
     "github": null,
     "category": "Mobile Development",
     "featured": false
@@ -141,7 +141,7 @@
     "description": "A Minecraft plugin for the Folia server platform that integrates with Towny to add badges to players for various achievements and statuses, such as having premium, being a donator, or being a staff member.",
     "skills": ["Java", "Folia", "Towny", "Minecraft Plugin Development", "Paper"],
     "image": "assets/projects/badgesfoliaplugin.png",
-    "link": null,
+    "link": "https://hbzearth.com",
     "github": null,
     "category": "Game Development",
     "featured": true
@@ -151,7 +151,7 @@
     "description": "A Minecraft plugin for the Folia server platform that adds a full in-game quest system with custom rewards and GUI. Players can complete quests to earn rewards and progress through different skill levels.",
     "skills": ["Java", "Folia", "Minecraft Plugin Development", "Paper"],
     "image": "assets/projects/skillpassfoliaplugin.png",
-    "link": null,
+    "link": "https://hbzearth.com",
     "github": null,
     "category": "Game Development",
     "featured": true
