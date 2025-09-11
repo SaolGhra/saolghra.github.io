@@ -364,6 +364,8 @@ header {
   padding: var(--spacing-2);
   border-radius: var(--border-radius-md);
   transition: all var(--transition-fast);
+  pointer-events: auto;
+  z-index: 1040;
 }
 
 .mobile-menu-btn:hover {
@@ -374,13 +376,14 @@ header {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 100%;
+  top: 70px;
   left: 0;
   width: 100%;
   background: var(--bg-secondary);
   padding: var(--spacing-4) 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: var(--z-dropdown);
+  z-index: 1040;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-menu.active {
@@ -393,13 +396,15 @@ header {
 }
 
 .mobile-nav-link {
-  display: block;
+  display: flex;
   color: var(--text-secondary);
-  padding: var(--spacing-3) 0;
+  padding: var(--spacing-3) var(--spacing-4);
   font-size: var(--font-size-base);
   transition: all var(--transition-fast);
   border-radius: var(--border-radius-md);
   margin: 0 var(--spacing-4);
+  min-height: 44px;
+  align-items: center;
 }
 
 .mobile-nav-link:hover, .mobile-nav-link.active {
@@ -1723,7 +1728,11 @@ footer {
   }
 
   .mobile-menu-btn {
-    display: block;
+    display: flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero {
@@ -1759,10 +1768,25 @@ footer {
   .terminal-box {
     width: 100%;
     max-width: 100%;
+    text-align: left;
+  }
+
+  .terminal-body {
+    text-align: left;
+  }
+
+  .terminal-line {
+    text-align: left;
+  }
+
+  .terminal-output {
+    text-align: left;
+  }
+
+  .terminal-command {
+    text-align: left;
   }
 }
-
-/* Mobile skills */
 @media (max-width: 768px) {
   .skill-list {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

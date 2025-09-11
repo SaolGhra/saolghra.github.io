@@ -1,9 +1,6 @@
 // DOM Elements
 const header = document.getElementById('header');
 const scrollProgress = document.querySelector('.scroll-progress');
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const mobileMenu = document.querySelector('.mobile-menu');
-const mobileMenuLinks = document.querySelectorAll('.mobile-nav-link');
 const blogToggleBtn = document.getElementById('blog-toggle-btn');
 const blogGrid = document.querySelector('.blog-grid');
 const contactForm = document.getElementById('contact-form');
@@ -65,7 +62,73 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   // Setup projects modal
   setupProjectsModal();
+  
+  // Handle window resize for responsive neofetch layout
+  window.addEventListener('resize', () => {
+    // Re-render terminal if needed for layout changes
+    const terminalBody = document.querySelector('.terminal-body');
+    if (terminalBody && terminalBody.children.length > 0) {
+      // Check if the last output is neofetch and re-run it if layout changed
+      const lastOutput = terminalBody.lastElementChild;
+      if (lastOutput && lastOutput.classList.contains('terminal-output') && 
+          lastOutput.textContent.includes('OS: Portfolio v3.0')) {
+        // Clear and re-run neofetch
+        terminalBody.innerHTML = '';
+        processTerminalCommand('neofetch', terminalBody, document.querySelector('.terminal-input-line'), {});
+      }
+    }
+  });
+  
+  // Setup mobile menu functionality
+  setupMobileMenu();
 });
+
+// Setup mobile menu functionality
+function setupMobileMenu() {
+  // Re-select elements to ensure they exist
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileMenuLinks = document.querySelectorAll('.mobile-nav-link');
+  
+  // Check if mobile menu elements exist
+  if (!mobileMenuBtn || !mobileMenu) {
+    console.warn('Mobile menu elements not found');
+    return;
+  }
+  
+  // Mobile Menu Toggle
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    mobileMenuBtn.classList.toggle('active');
+    
+    // Change icon
+    const icon = mobileMenuBtn.querySelector('i');
+    if (icon) {
+      if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    }
+  });
+
+  // Close mobile menu when clicking on a link
+  if (mobileMenuLinks && mobileMenuLinks.length > 0) {
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        mobileMenuBtn.classList.remove('active');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (icon) {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
+      });
+    });
+  }
+}
 
 // Fix loading of hero content
 async function loadGeneralData() {
@@ -547,33 +610,6 @@ function checkScroll() {
   }
 }
 
-// Mobile Menu Toggle
-mobileMenuBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
-  mobileMenuBtn.classList.toggle('active');
-  
-  // Change icon
-  const icon = mobileMenuBtn.querySelector('i');
-  if (icon.classList.contains('fa-bars')) {
-    icon.classList.remove('fa-bars');
-    icon.classList.add('fa-times');
-  } else {
-    icon.classList.remove('fa-times');
-    icon.classList.add('fa-bars');
-  }
-});
-
-// Close mobile menu when clicking on a link
-mobileMenuLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('active');
-    mobileMenuBtn.classList.remove('active');
-    const icon = mobileMenuBtn.querySelector('i');
-    icon.classList.remove('fa-times');
-    icon.classList.add('fa-bars');
-  });
-});
-
 // Blog Toggle View
 if (blogToggleBtn && blogGrid) {
   blogToggleBtn.addEventListener('click', () => {
@@ -815,32 +851,39 @@ function processTerminalCommand(command, terminalBody, inputLine, extraCommands 
               'Shell: zsh',
               'Resolution: 1920x1080',
               'DE: VS Code',
-              'WM: GitHub Copilot',
               'Theme: Dark Professional',
               'Icons: Font Awesome',
               'Terminal: Custom Terminal'
             ];
 
-            // Create formatted output with ASCII on left, system info on right
+            // Check if we're on mobile (screen width <= 768px)
+            const isMobile = window.innerWidth <= 768;
             let formattedOutput = '';
 
-            // Find the maximum length of ASCII lines to ensure consistent padding
-            const maxAsciiLength = Math.max(...logoLines.map(line => line.length));
-            const asciiWidth = maxAsciiLength + 2; // Add minimal padding
+            if (isMobile) {
+              // Mobile: Stack ASCII art above system info
+              formattedOutput = logoLines.join('\n') + '\n\n';
+              formattedOutput += systemInfo.join('\n');
+            } else {
+              // Desktop: Side by side layout
+              // Find the maximum length of ASCII lines to ensure consistent padding
+              const maxAsciiLength = Math.max(...logoLines.map(line => line.length));
+              const asciiWidth = maxAsciiLength + 2; // Add minimal padding
 
-            // Find the first non-empty line to start system info alignment
-            const firstContentIndex = logoLines.findIndex(line => line.trim().length > 0);
+              // Find the first non-empty line to start system info alignment
+              const firstContentIndex = logoLines.findIndex(line => line.trim().length > 0);
 
-            for (let i = 0; i < logoLines.length; i++) {
-              const logoLine = logoLines[i].padEnd(asciiWidth, ' ');
+              for (let i = 0; i < logoLines.length; i++) {
+                const logoLine = logoLines[i].padEnd(asciiWidth, ' ');
 
-              // Only show system info starting from the first content line
-              const systemInfoIndex = i - firstContentIndex;
-              const infoLine = (systemInfoIndex >= 0 && systemInfoIndex < systemInfo.length)
-                ? systemInfo[systemInfoIndex]
-                : '';
+                // Only show system info starting from the first content line
+                const systemInfoIndex = i - firstContentIndex;
+                const infoLine = (systemInfoIndex >= 0 && systemInfoIndex < systemInfo.length)
+                  ? systemInfo[systemInfoIndex]
+                  : '';
 
-              formattedOutput += logoLine + infoLine + '\n';
+                formattedOutput += logoLine + infoLine + '\n';
+              }
             }
 
             const outputLine = document.createElement('div');

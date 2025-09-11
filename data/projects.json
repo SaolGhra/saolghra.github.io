@@ -124,7 +124,7 @@
     "link": "https://www.saolghra.co.uk/Doghouse-Website/",
     "github": null,
     "category": "Web Development",
-    "featured": true
+    "featured": false
   },
   {
     "name": "Expense Tracker",
@@ -135,5 +135,15 @@
     "github": null,
     "category": "Mobile Development",
     "featured": false
+  },
+  {
+    "name": "Badges Plugin",
+    "description": "A Minecraft plugin for the Folia server platform that integrates with Towny to add badges to players for various achievements and statuses, such as having premium, being a donator, or being a staff member.",
+    "skills": ["Java", "Folia", "Towny", "Minecraft Plugin Development", "Paper"],
+    "image": "assets/projects/badgesfoliaplugin.png",
+    "link": null,
+    "github": null,
+    "category": "Game Development",
+    "featured": true
   }
 ]
