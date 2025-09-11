@@ -12,7 +12,6 @@
   "frameworks": [
     { "name": "Node.js", "icon": "assets/skills/nodejs.svg" },
     { "name": "jQuery", "icon": "assets/skills/jquery.svg" },
-    { "name": "Bash", "icon": "assets/skills/bash.svg" },
     { "name": "Apache", "icon": "assets/skills/apache.svg" },
     { "name": "DiscordJS", "icon": "assets/skills/discordjs.svg" },
     { "name": "OpenCV", "icon": "assets/skills/opencv.svg" },
@@ -30,12 +29,14 @@
   ],
   "tools": [
     { "name": "Git", "icon": "assets/skills/git.svg" },
+    { "name": "Bash", "icon": "assets/skills/bash.svg" },
     { "name": "Docker", "icon": "assets/skills/docker.svg" },
     { "name": "VS Code", "icon": "assets/skills/vscode.svg" },
     { "name": "Linux", "icon": "assets/skills/linux.svg" },
     { "name": "Pterodactyl", "icon": "assets/skills/pterodactyl.svg" },
     { "name": "Gradle", "icon": "assets/skills/gradle.svg" },
     { "name": "Maven", "icon": "assets/skills/maven.svg" },
+
     { "name": "GitHub", "icon": "assets/skills/github_white.svg" }
   ]
 }
